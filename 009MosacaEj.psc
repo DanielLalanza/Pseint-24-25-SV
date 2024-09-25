@@ -14,7 +14,7 @@ Algoritmo MosacaEj009
 	
 	Para contadorX=1 Hasta 10 Con Paso 1 Hacer
 		Para contadorY=1 Hasta 10 Con Paso 1 Hacer
-			Escribir Sin Saltar Matriz[contadorX, contadorY] ", "
+			Escribir Sin Saltar Matriz[contadorX, contadorY] ", " 
 		Fin Para
 		Escribir [""]
 	Fin Para
@@ -28,21 +28,6 @@ Algoritmo MosacaEj009
 		Si RespuestaX=Posicionx y RespuestaY=Posiciony Entonces
 			Escribir "HAS ACERTADOOO!!!"
 		SiNo
-			Escribir "Vuelve a intentarlo"
-			Si RespuestaX>Posicionx Entonces
-				Escribir "La Mosca está mas hacia la izquierda"
-			FinSi
-			Si RespuestaX<Posicionx Entonces
-				Escribir "La Mosca está mas hacia la derecha"
-			FinSi
-			Si RespuestaY>Posiciony Entonces
-				Escribir "La Mosca está mas hacia arriba"
-			FinSi
-			Si RespuestaY<Posiciony Entonces
-				Escribir "La Mosca está mas hacia abajo"
-			FinSi
-			
-			
 			Escribir "Vuelve a intentarlo"
 			Si RespuestaX>Posicionx Entonces
 				Escribir "La Mosca está mas hacia la izquierda"
