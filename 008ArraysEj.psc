@@ -15,16 +15,22 @@ Algoritmo EjercicioArrays
 		Escribir Sin Saltar Array[contador], " "
 	Fin Para
 	Para oportunidad=1 Hasta 10 Con Paso 1 Hacer
+		Aciertos=0
+		Escribir ""
 		Escribir "Dime 1 Número"
 		Leer Entrada
 		Para comprobacion=1 Hasta 100 Con Paso 1 Hacer
 			Si Array[comprobacion] = Entrada Entonces
 				Aciertos=Aciertos+1;
-				Escribir "Has acertado " Aciertos
-				 
+				Array[comprobacion] = 0;
 			Fin Si
-			Array[comprobacion] = 0;
+			
 		Fin Para
+		Si Aciertos>0 Entonces
+			Escribir "Has acertado " Aciertos
+		SiNo 
+			Escribir "No Has acertado, vuelve a intentarlo"
+		FinSi
 	Fin Para
 
 FinAlgoritmo
