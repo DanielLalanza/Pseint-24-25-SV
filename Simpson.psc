@@ -44,8 +44,9 @@ Algoritmo Simpson
 	Vidas=5
 	
 	Repetir
-		Escribir "Mueve a Bart con W,A,S,D, Tienes " Vidas " Vidas" 
+		Escribir "Mueve a Bart con W,A,S,D Hacia la meta [M], Cuidado no chocar con Homer [H], Tienes " Vidas " Vidas" 
 		Leer Entrada
+		Entrada=MINUSCULAS(Entrada)
 		Si Entrada = "a" Entonces
 			Si BartY=1 Entonces
 				Escribir "No Puedes ir mas a la izquierda"
@@ -62,7 +63,7 @@ Algoritmo Simpson
 		
 		Si Entrada = "d" Entonces
 			Si BartY=10 Entonces
-				Escribir "No Puedes ir mas a la izquierda"
+				Escribir "No Puedes ir mas a la derecha"
 			SiNo
 				Limpiar Pantalla
 				matriz(BartX,BartY) = "V"
@@ -101,6 +102,11 @@ Algoritmo Simpson
 				matriz(BartX,BartY) = "B"
 			FinSi
 		FinSi
+		
+		Si Entrada <> "w" o Entrada  <> "a" o Entrada <> "s" o Entrada <> "d" Entonces
+			Limpiar Pantalla
+		FinSi
+		
 		Para contadorx=1 Hasta 10 Con Paso 1 Hacer
 			Para contadory=1 Hasta 10 Con Paso 1 Hacer
 				Imprimir Sin Saltar "[" matriz[contadorx,contadory] "] "
@@ -111,7 +117,7 @@ Algoritmo Simpson
 	Si Vidas=0 Entonces
 		Escribir "GAME OVER"
 	SiNo
-		Escribir "Has Ganado!!!!"
+		Escribir "Has Ganado!!!"
 	FinSi
 
 	
